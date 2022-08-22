@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# MorseCode-decoder
+# School Library App
 
 > Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. And all of this have been built in a beautiful and well-organized way!
 
@@ -8,6 +8,20 @@
 ## Built With
 
 - `Ruby`
+
+### Download it as a ZIP file
+or
+
+### Clone it in your local machine using GIT
+to get a local copy , clone the repository using git clone
+(git@github.com:Sanja969/School-Library-App.git)
+
+After you clone it run  the following commands
+
+ - cd School-Library-App
+ - Open irb terminal
+ - Run load 'main.rb' to execute the code
+
 
 ## Author
 
