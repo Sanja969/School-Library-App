@@ -37,7 +37,7 @@ I am an aspiring web developer from Serbia.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Sanja969/Decode-a-Morse-code-message/issues).
+Feel free to check the [issues page](https://github.com/Sanja969/School-Library-App/issues).
 
 ## Show your support
 
