@@ -20,14 +20,19 @@ class Student < Person
 end
 
 class1 = Classroom.new(333)
-# p class1.students
-
 sanja = Student.new(19, 'Sanja', 22)
+p '********************************************'
+p class1.students
+p sanja.classroom
+
 class1.add_student(sanja)
-# p class1.students
-# sanja.classroom = 333
-# p class1.students
+p '********************************************'
+p class1.students
+p sanja.classroom
 
-sanja.classroom = 222
-
+class2 = Classroom.new(353)
+sanja.classroom = class2
+p '********************************************'
+p class1.students
+p class2.students
 p sanja.classroom
