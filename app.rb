@@ -19,7 +19,7 @@ class App
 
   def list_people
     puts 'People list is empty! Add a person.' if @people.empty?
-    @people.map do |person|
+    people.map do |person|
       p "#{person.class.name} Name: #{person.name}, Age: #{person.age}, id: #{person.id}"
     end
   end
@@ -43,7 +43,7 @@ class App
     title = gets.chomp
     print 'Author: '
     author = gets.chomp
-    @books << Book.new(title, author)
+    @books << Book.new(title author)
     puts "Book #{title} created successfully."
   end
 
