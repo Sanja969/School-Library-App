@@ -5,7 +5,7 @@ class Person < Nameable
   attr_accessor :name, :age, :rentals
 
   def initialize(age, name)
-    @id = Time.now.to_f
+    @id = Random.rand(1..1000)
     @name = name
     @age = age
     super()
@@ -30,10 +30,3 @@ class Person < Nameable
     @age >= 18
   end
 end
-
-# person = Person.new(22, 'maximilianus')
-# p person.correct_name
-# capitalized_person = CapitalizeDecorator.new(person)
-# p capitalized_person.correct_name
-# capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-# p capitalized_trimmed_person.correct_name
