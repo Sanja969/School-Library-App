@@ -11,6 +11,7 @@ class App
   end
 
   def display_options
+    puts 'Welcome to my School Library!'
     puts
     puts 'Choose an option by entering a number: '
     puts '1 - List all books'

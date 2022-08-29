@@ -1,10 +1,8 @@
 require './app'
-require 'pry'
 
 def main
-  puts 'Welcome to my School Library!'
   @app = App.new
+  app.run
 end
 
 main
-binding.pry
