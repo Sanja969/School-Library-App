@@ -2,12 +2,19 @@ require './book'
 require './student'
 require './teacher'
 require './rental'
+require 'json'
+require './store'
+require './save'
 
 class App
+  include Store
+  include Save
+
   def initialize
     @books = []
     @people = []
     @rentals = []
+    load
   end
 
   def display_options
@@ -22,7 +29,7 @@ class App
     4 - Create a book
     5 - Create a rental
     6 - List all rentals for a given person id
-    7 - Exit'
+    7 - Save and Exit'
   end
 
   def act_regarding_input
@@ -30,6 +37,7 @@ class App
       display_options
       choice = gets.to_i
       if choice == 7
+        save
         puts 'Thank You for using my School Library!'
         break
       end
