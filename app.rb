@@ -3,12 +3,18 @@ require './student'
 require './teacher'
 require './rental'
 require 'json'
+require './store'
+require './save'
 
 class App
+  include Store
+  include Save
+
   def initialize
     @books = []
     @people = []
     @rentals = []
+    load
   end
 
   def display_options
@@ -31,9 +37,7 @@ class App
       display_options
       choice = gets.to_i
       if choice == 7
-        File.open('books.json', 'w') { |f| f.puts @books.to_json }
-        File.open('people.json', 'w') { |f| f.puts @people.to_json }
-        File.open('rentals.json', 'w') { |f| f.puts @rentals.to_json }
+        save
         puts 'Thank You for using my School Library!'
         break
       end
