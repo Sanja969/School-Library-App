@@ -34,4 +34,12 @@ describe Person do
       expect(@person.rentals.length).to eql 2
     end
   end
+
+  describe '#can_use_services?' do
+    it 'can use services return true if user is older than 18' do
+      expect(@person.can_use_services?).to eql true
+      @person1 = Person.new 16, 'aca'
+      expect(@person1.can_use_services?).to eql false
+    end
+  end
 end
