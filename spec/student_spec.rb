@@ -31,7 +31,7 @@ describe Student do
 
   describe '#classroom' do
     it 'returns the correct age' do
-      expect(@student.age).to eql 20
+      expect(@student.classroom).to eql 12
     end
   end
 end
