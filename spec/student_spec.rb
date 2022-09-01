@@ -6,7 +6,7 @@ describe Student do
     expect(Student.superclass).to eq(Person)
   end
   before :all do
-    @student = Student.new 20, 'name', 12
+    @student = Student.new 30, 'name', 12
   end
 
   describe '#new' do
@@ -19,7 +19,7 @@ describe Student do
   end
   describe '#age' do
     it 'returns the correct age' do
-      expect(@student.age).to eql 20
+      expect(@student.age).to eql 30
     end
   end
 
@@ -31,7 +31,11 @@ describe Student do
 
   describe '#classroom' do
     it 'returns the correct age' do
+<<<<<<< HEAD
       expect(@student.classroom).to eql 12
+=======
+      expect(@student.age).to eql 30
+>>>>>>> 3f09c11fa5f6e06d023f02de1e4be8b305b7a7d7
     end
   end
 end

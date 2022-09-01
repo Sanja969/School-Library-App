@@ -19,12 +19,14 @@ module Save
           { name: person.name, age: person.age, id: person.id, type: person.class.name, classroom: person.classroom }
       else
         people_hash <<
-          { name: person.name, age: person.age, id: person.id, type: person.class.name, specialization: person.specialization }
+          { name: person.name, age: person.age, id: person.id, type: person.class.name,
+            specialization: person.specialization }
       end
     end
     @rentals.each do |rental|
       rentals_hash <<
-        { date: rental.date, book_author: rental.book.author, book_title: rental.book.title, person: rental.person.name }
+        { date: rental.date, book_author: rental.book.author, book_title: rental.book.title,
+          person: rental.person.name }
     end
   end
 end

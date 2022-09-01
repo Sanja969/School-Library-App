@@ -5,7 +5,7 @@ describe Rental do
   before :all do
     @book = Book.new('Title', 'Author')
     @person = Person.new(20, 'name')
-    @rental = Rental.new('2021/12/12', @book, @person)
+    @rental = Rental.new('2003/11/18', @book, @person)
   end
 
   describe '#new' do
@@ -19,7 +19,7 @@ describe Rental do
 
   describe '#date' do
     it 'returns the correct date' do
-      expect(@rental.date).to eql '2021/12/12'
+      expect(@rental.date).to eql '2003/11/18'
     end
   end
 
